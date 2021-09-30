@@ -1,6 +1,7 @@
 #include<stdio.h>
+/*with proper grammar, but the outcome is a piece of art,*/
 int main(void)
 {
-	printf("%s\n","with proper grammar, but the outcome is a piece of art,");
+	printf("%s","with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
