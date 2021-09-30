@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - funtion display "Programming is like building a multilingual puzz
- * Return: 0   
+ * Return: 0
  */
 int main(void)
 {
