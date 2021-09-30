@@ -1,8 +1,10 @@
 #include <stdio.h>
 /**
- *  *main - funtion display "Programming is like building a multilingual puzzle.
+ *  *main - funtion display "Programming is like building a multilingual puzz
  *   *Return: 0
- *    */
+ *   
+ *
+  */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
