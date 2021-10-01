@@ -1,14 +1,15 @@
 #include <time.h>
 #include<stdlib.h>
 #include<stdio.h>
-/*
- * *main prints alphabet
- * *return: 0
- */
+/**
+ *  * main - Entry point
+ *   *
+ *    * Return: Always 0 (Success)
+ *     */
 int main(void)
 {
 char i;
-for ( i = 'a'; i <= 'z'; i++)
+for (i = 'a'; i <= 'z'; i++)
 {
 	putchar(i);
 }
