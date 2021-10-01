@@ -6,7 +6,6 @@
  *   *
  *    * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 char i = 'a';
@@ -19,7 +18,7 @@ else
 {
 putchar(i);
 i++;
-} while (i <= 'z');
+} while(i <= 'z');
 putchar('\n');
 return (0);
 }
