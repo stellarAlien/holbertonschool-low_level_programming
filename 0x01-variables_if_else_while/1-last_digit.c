@@ -1,8 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
+#include<stdio.h>
 /* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * *main -display the last digit of n
+ *  *return: 0
+ */
 int main(void)
 {
 		int n;
