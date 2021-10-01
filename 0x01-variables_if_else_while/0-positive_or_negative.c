@@ -1,5 +1,6 @@
 #include <time.h>
 #include<stdlib.h>
+#include<stdio.h>
 /*
 *determinesthe nature of n
 */
