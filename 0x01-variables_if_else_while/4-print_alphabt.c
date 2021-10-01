@@ -19,7 +19,7 @@ else
 {
 putchar(i);
 i++;
-} while (i < = 'z');
+} while (i <= 'z');
 putchar('\n');
 return (0);
 }
