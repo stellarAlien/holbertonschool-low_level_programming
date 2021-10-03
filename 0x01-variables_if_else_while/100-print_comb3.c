@@ -21,4 +21,5 @@ int i,j;
                 putchar(' ');
             }
 }
+return(0);
 }
