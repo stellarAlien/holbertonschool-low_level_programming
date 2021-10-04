@@ -4,7 +4,7 @@
  *   *   *   *
  *     *    *    * Return: void
  */
-void main(void)
+int main(void)
 {
 int i, j;
 for (i = '0'; i <= '8'; i++)
@@ -24,4 +24,5 @@ putchar(' ');
 }
 }
 }
+return (0);
 }
