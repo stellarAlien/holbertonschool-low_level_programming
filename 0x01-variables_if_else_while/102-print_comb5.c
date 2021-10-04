@@ -19,11 +19,11 @@ for (; k <= '9'; k++)
 {
 for (; l <= '9'; l++)
 {
-putchar(i );
+putchar(i);
 putchar(j);
 putchar(' ');
 putchar(k);
-putchar(l );
+putchar(l);
 if (!(i == '9' && j == '8'
 && k == '9' && l == '9'))
 {
