@@ -1,33 +1,40 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * Return: 0
- */
-int main (void)
+*main - display all possible combinations of two two-digit numbers
+*Return: 0
+*/
+int main(void)
 {
-int i, j, k, l;
+int i = 0;
+int j = 0;
+int k = 0;
+int l = 0;
 for (i = '0'; i <= '9'; i++)
 {
-for (j = '0'; j <= 9; j++)
+for (j = '0'; y <= '9'; j++)
 {
-for (k=0; k <= 9; k++)
+l = j + 1;
+k = i;
+for (; k <= '9'; k++)
 {
-for (;l <= 9; l++)
+for (; l <= '9'; l++)
 {
-putchar(i);
+putchar(i );
 putchar(j);
-putchar(',');
 putchar(' ');
-if (!(i == '9' && j == '8' && k == '9' && l == '9'))
+putchar(k);
+putchar(l );
+if (!(x == '9' && y == '8'
+&& z == '9' && o == '9'))
 {
 putchar(',');
 putchar(' ');
 }
-l=0;
+}
+o = 0;
 }
 }
 }
-}
-putchar ('\n');
- return(0);
+	putchar('\n');
+	return (0);
 }
