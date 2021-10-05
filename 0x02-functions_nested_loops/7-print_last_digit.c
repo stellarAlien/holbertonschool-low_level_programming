@@ -4,9 +4,9 @@
  *   *@n: parameter integer
  *    *Return: last digit
  */
-int main(void)
+ int print_last_digit(int n)
 {
-int n,x;
+x;
 n=98;
 x = n%10;
 if (x < 0)
