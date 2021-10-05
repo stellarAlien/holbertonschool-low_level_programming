@@ -4,26 +4,11 @@
  *   *   *
  *    *    * Return: Always 0.
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
-int i;
-for (i = 'a'; i <= 'z'; i++)
-{
-_putchar ('i');
-}
-_putchar('\n');
-}
-/**
- *  *  * main - Entry point
- *   *   * Return: 0
- */
-int main(void)
-{
-int i;
-
 for (i = 0; i <= 9; i++)
 {
 print_alphabet();
 }
-}
+
 
