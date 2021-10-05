@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *  *  *_print_sign - display 1 is lower char, 0 otherwise
- *   *   *@c: The character or ascii code
- *    *    *Return: 0 or 1
+ *print_sign - display + positive, - negative, 0 zero
+ *@n: parameter character or code ascii
+ *Return: + - or 0
  */
 int print_sign(int n)
 {
@@ -20,4 +20,5 @@ else
 {
 _putchar('0');
 return (0);
+}
 }
