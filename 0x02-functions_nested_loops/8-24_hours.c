@@ -1,38 +1,45 @@
 #include "main.h"
+
 /**
- *  *jack_bauer - display 24hours
- *   *Return: void
+ *jack_bauer - display 24hours
+ *Return: void
  */
 void jack_bauer(void)
 {
-int i, j, k, l, v;
-for (i = '0'; i <= '2'; i++)
-{
-if (v)
-{
-break;
-}
-for (j = '0'; j <= '9'; j++)
-{
-for (k = '0'; k <= '5'; k++)
-{
-for (l = '0'; l <= '9'; l++)
-{
-if (!(i == '2' && j == '3' && k == "5" && l == "9"))
-{
-_putchar(i);
-_putchar(j);
-_putchar(':');
-_putchar(k);
-_putchar(l);
-}
-else
-{
-v = 1;
-break;
-}
-}
-}
-}
-}
+	int i;
+	int y;
+	int x;
+	int z;
+
+	for (i = 0; i <= 2; i++)
+	{
+		for (y = 0; y <= 9; y++)
+		{
+			for (x = 0; x <= 5; x++)
+			{
+				for (z = 0; z <= 9; z++)
+				{
+					_putchar(i + '0');
+					_putchar(y + '0');
+
+					_putchar(':');
+
+					_putchar(x + '0');
+					_putchar(z + '0');
+
+					_putchar('\n');
+
+					if (!(i == 2 && y == 3
+					      && x == 5 && z == 9))
+					{
+						continue;
+					}
+					else
+					{
+						return;
+					}
+				}
+			}
+		}
+	}
 }
