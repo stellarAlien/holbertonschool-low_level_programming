@@ -4,12 +4,18 @@
 */
 void print_number(int n)
 {
-int x,n;
-while(n > 10)
+int x,i;
+while((n / 10) > 10))
 {
-    x = n % 10;
-    n = (int)(n / 10);
-    printf('%d', x);
+i++;    
 }
-printf('%d', n);
+for (; i > 0; i--)
+{    
+x = n / 10 * i;
+n = n - 10 * i * x;
+_putchar("%d n= \n", n);
+_putchar("%d x= \n", n)
+    
+}
+_putchar('%d',n);
 }
