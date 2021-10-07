@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 /**
 *  mul - multiplies two numbers
 * @a: var
@@ -7,6 +7,6 @@
 */
 int mul(int a, int b)
 {
- a=a*b;
+ a*=b;
 return (a);
 }
