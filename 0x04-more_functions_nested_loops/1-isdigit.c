@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  *  *_isdigit - return 1 or 0 if is digit
  *   *@c: parameter integer
