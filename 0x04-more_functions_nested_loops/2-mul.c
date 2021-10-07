@@ -1,12 +1,12 @@
 #include "main.h"
+
 /**
-*  mul - multiplies two numbers
-* @a: var
-* @b :var
-* return : a*b
-*/
+ * mul - returns 1 if the character is uppercase
+ * @a : int
+ * @b : int
+ * Return: 1 or 0
+ */
 int mul(int a, int b)
 {
- a*=b;
-return (a);
+return (a * b);
 }
