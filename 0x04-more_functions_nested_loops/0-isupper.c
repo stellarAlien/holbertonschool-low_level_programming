@@ -1,11 +1,9 @@
-#include <stdio.h>
-#include "main.h"
 /**
- * main - check the code.
+ * _isupper - check the code.
  *
  * Return: Always 0.
  */
-int _isuppper( char c )
+int _isuppper( int c )
 {
 if (c >='A' && c<='Z')
 {
