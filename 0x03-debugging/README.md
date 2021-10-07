@@ -1,2 +1,2 @@
-#General
-*Ddebugging
+##General
+*Debugging
