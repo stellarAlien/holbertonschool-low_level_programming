@@ -1,6 +1,6 @@
-#ifndef "MAIN_H"
+#ifndef _MAIN_H
 #define
-#include <stdio.h>
+
 int _isupper(int c);
 void print_numbers(void);
 int main(void);
