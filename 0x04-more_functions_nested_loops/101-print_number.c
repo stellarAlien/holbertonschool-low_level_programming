@@ -4,7 +4,7 @@
 */
 void print_number(int n)
 {
-int x;
+int x,n;
 while(n > 10)
 {
     x = n % 10;
