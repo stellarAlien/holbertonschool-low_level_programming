@@ -1,14 +1,12 @@
 #include "main.h"
+#include<math.h>
 /* print_number - see function
 * return : always 0
 */
 void print_number(int n)
 {
 int x,i;
-while((n / 10) > 10))
-{
-i++;    
-}
+i=log10(n);
 for (; i > 0; i--)
 {    
 x = n / 10 * i;
