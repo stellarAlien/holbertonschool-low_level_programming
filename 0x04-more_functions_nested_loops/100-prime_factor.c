@@ -3,14 +3,19 @@
 *main - see function
 *return : always 0
 */
+/**
+*prime - see function
+*@n: int to check if it's prime
+*return: v
+*/
 boolean prime( int n)
 {
 boolean v;
 int i;
-for(i = 2;i <= n/2; i++){
+for(i = 2; i <= n/2; i++){
 if((n % i) == 0)
 {
-v=1;
+v = 1;
 break;
 }
 }  
@@ -18,13 +23,13 @@ return (v);
 } 
 int main (void)
 {
-long int i,n,m;
-n=612852475143;
+long int i, n, m;
+n = 612852475143;
 for (i = 1; i <= n/2 ; i++)
 {
 if(!prime(i))
 {
-m=i;
+m = i;
 }
 printf("%dl\n", m);
 return (0);
