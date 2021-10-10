@@ -1,22 +1,22 @@
 #include "main.h"
+
 /**
-*print_number - prints number without array
-*Return: void
-*@n : int to print
+* print_number - print integer without array
+*
+* @n: integer to print
+* Return: void
 */
 void print_number(int n)
 {
-if (n < 0)
-{
-_putchar('-');
-print_number(n * -1);
-}
-if (n < 10)
-{
-_putchar (n + '0');
-}
-else{
-print_number(n / 10);
-_putchar((n % 10) + '0');  
-}  
+	unsigned int r;
+
+	if (n < 0)
+	{
+		n *= -1;
+		_putchar('-');
+	}
+	r = n;
+	if (r / 10)
+		print_number(r / 10);
+	_putchar((r % 10) + '0');
 }
