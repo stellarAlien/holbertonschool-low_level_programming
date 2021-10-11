@@ -11,13 +11,12 @@ void puts2(char *str)
 {
 int i, n;
 n = strlen(str);
-for( i = 0; i<= n ;i++)
+for (i = 0; i <= n ; i++)
 {
 if (!(i % 2))
 {
 printf("%c", str[i]);
 }
-i++;
 }
 printf("\n");
 }
