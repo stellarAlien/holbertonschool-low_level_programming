@@ -1,4 +1,5 @@
 #include "main.h"
+#include<string.h>
 /**
  *  *puts2 - Write a function that prints every other
  *   *character of a string, starting with the first
@@ -8,9 +9,9 @@
  */
 void puts2(char *str)
 {
-int i;
-i = 0;
-while (str[i] != '\0')
+int i, n;
+n = strlen(str);
+for( i = 0; i<= n ;i++)
 {
 if (!(i % 2))
 {
