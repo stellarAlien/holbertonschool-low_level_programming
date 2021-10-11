@@ -3,7 +3,7 @@
  *  * swap_int : see function
  *   * @*a:var 1
  *    * @*b: var2
- *     */
+ */
 void swap_int(int *a, int *b)
 {
 	int aux;
