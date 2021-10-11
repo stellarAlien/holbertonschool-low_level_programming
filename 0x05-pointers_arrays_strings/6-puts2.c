@@ -9,13 +9,12 @@
  */
 void puts2(char *str)
 {
-int i, n;
-n = strlen(str);
-for (i = 0; i <= n ; i++)
+int i = 0;
+while (str[i])
 {
-if (!(i % 2))
-{
-printf("%c", str[i]);
+if (! (i % 2)
+putchar(str[i]);
+i++;
 }
-}
+putchar('\n');
 }
