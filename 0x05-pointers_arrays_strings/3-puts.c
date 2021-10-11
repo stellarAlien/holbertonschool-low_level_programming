@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *  *_strlen - return size of array char
- *   *@s: pointer integer
- *    *Return: size of array char
+ *  *_puts - display string data
+ *   *@str: pointer char
+ *    *Return: void
  */
 void _puts(char *str)
 {
