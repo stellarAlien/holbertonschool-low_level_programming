@@ -2,9 +2,10 @@
 void print_rev(char *s)
 {
 int i;
-for (i = strlen(s); i >= 0; i--)
+while (s[i] != '\0' && i >= 0)
 {
 putchar(s[i]);
+i++
 }	
 putchar('\n');
 }
