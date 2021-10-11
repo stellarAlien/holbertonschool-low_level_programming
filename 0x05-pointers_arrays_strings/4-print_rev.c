@@ -1,5 +1,11 @@
 #include "main.h"
 #include<string.h>
+/**
+ *  *_puts - display string data
+ *   *@str: pointer char
+ *    *Return: void
+ */
+
 void print_rev(char *s)
 {
 int i;
