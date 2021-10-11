@@ -1,5 +1,5 @@
-#ifndef "MAIN.H"
-#define "MAIN.H"
+#ifndef"MAIN.H"
+#define"MAIN.H"
 #include<stdio.h>
 void swap_int(int *a, int *b);
 int _strlen(char *s);
