@@ -1,4 +1,5 @@
 #include"main.h"
+
 /**
  *  *swap_int - swap form integer a to integer b
  *   *@a: pointer integer
@@ -8,7 +9,8 @@
 
 void swap_int(int *a, int *b)
 {
-	int aux;
+int aux;
+
 	aux = *a;
 	*a = *b;
 	*b = aux;
