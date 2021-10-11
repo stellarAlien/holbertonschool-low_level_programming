@@ -1,10 +1,10 @@
-include "main.h"
+#include "main.h"
 
 /**
- * *function to update a value
- * * void reset_to_98 - read function
- * * @n : int to update
- * */
+ *  *reset_to_98 - reasign value in address memory
+ *   *@n: parameter enteger
+ *    *Return: void
+ */
 void reset_to_98(int *n)
 {
 *n = 98;
