@@ -7,7 +7,6 @@
  */
 void rev_string(char *s)
 {	
-char c;
 int n, i, x;
 n = strlen(s);
 while( i <=  n / 2)
