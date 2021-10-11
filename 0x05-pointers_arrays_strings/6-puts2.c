@@ -19,4 +19,5 @@ printf("%c", str[i]);
 }
 i++;
 }
+printf("\n");
 }
