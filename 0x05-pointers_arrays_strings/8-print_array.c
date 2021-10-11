@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *  *print_array - Write a function that prints n elements of an array of integers
+ *print_array - Write a function that prints n elements of an array of integers
  *   *@a: pointer integer
  *    *@n: parameter integer
  *     *Return: void
