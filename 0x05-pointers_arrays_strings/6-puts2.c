@@ -18,5 +18,4 @@ if (!(i % 2))
 printf("%c", str[i]);
 }
 }
-printf("\n");
 }
