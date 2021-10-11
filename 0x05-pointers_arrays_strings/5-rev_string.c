@@ -1,5 +1,10 @@
 #include"main.h"
 #include<string.h>
+/**
+ *  *rev_string - display revert string data
+ *   *@s: pointer char
+ *    *Return: void
+ */
 void rev_string(char *s)
 {	
 char c;
