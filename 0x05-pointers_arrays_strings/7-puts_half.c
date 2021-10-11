@@ -6,8 +6,15 @@
  */
 void puts_half(char *str)
 {
-int i;
-while(i <= strlen(s)/2)
+int i, n;
+if(!( strlen(str) % 2))
+{
+i = ((strlen(str)-1)/2);
+}
+else
+i = strlen(str)/2;
+n = strlen(str);
+while(i <= n)
 {
 putchar(str[i]);
 i++
