@@ -8,12 +8,12 @@
 void puts_half(char *str)
 {
 int i, n;
-if(!( strlen(str) % 2))
+if( (strlen(str) % 2) == 0)
 {
-i = ((strlen(str)-1)/2);
+i = ((strlen(str)/2);
 }
 else
-i = strlen(str)/2;
+i = ((strlen(str)-1)/2);
 n = strlen(str);
 while(i <= n)
 {
