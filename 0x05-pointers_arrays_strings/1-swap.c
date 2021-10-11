@@ -1,8 +1,9 @@
 #include"main.h"
 /**
- *  * swap_int : see function
- *   * @*a:var 1
- *    * @*b: var2
+ *  *swap_int - swap form integer a to integer b
+ *   *@a: pointer integer
+ *    *@b: pointer integer
+ *     *Return: void
  */
 void swap_int(int *a, int *b)
 {
