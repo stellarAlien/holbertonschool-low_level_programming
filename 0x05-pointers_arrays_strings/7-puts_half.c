@@ -18,7 +18,7 @@ n = strlen(str);
 while(i <= n)
 {
 putchar(str[i]);
-i++
+i++;
 }
 }
 
