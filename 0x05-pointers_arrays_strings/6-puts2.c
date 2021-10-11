@@ -14,7 +14,7 @@ while (str[i] != '\0')
 {
 if (!(i % 2))
 {
-putchar(str[i] + '0');
+printf("%c", str[i]);
 }
 i++;
 }
