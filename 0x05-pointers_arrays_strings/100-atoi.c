@@ -8,7 +8,7 @@ int _atoi(char *s)
 int i,a;
 switch (s[i])
 {
-	 case('\0');
+	 case('\0')
 	  {
 		   break;
 		    }
@@ -18,7 +18,7 @@ switch (s[i])
 	     case(+):
 	     a = 1;
 	      i++;
-	       case ( s[i] <='0' && s[i] == '9'):
+	       case ('0' ... '9'):
 	       if(a)
 	       {
 		       printf("%d", s[i]-48);
