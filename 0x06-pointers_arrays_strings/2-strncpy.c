@@ -1,17 +1,17 @@
+#include "main.h"
 /**
- * _strncpy- link two strings
- * @dest :string to be concatenated with src
- * @src : string to concatenate to dest
- * @n : how many bytes to link from src to dest
- * Return: dest
+ * _strcmp- compare two strings
+ * @s1 :1st string to compare
+ * @s2 :2nd string to compare
+ * Return: Always 0
  */
-char *_strncpy(char *dest, char *src, int n)
+int _strcmp(char *s1, char *s2)
 {
 int i;
-for (i = 0; src[i] != '\0' && i < n; i++)
+for (i = 0; s1[i] != '\0' && s2[i] != '\0'; i++)
 {
-dest[i] = src[i];
+if (s1[i] != s2[i])
+return (s1[i] - s2[i]);
 }
-dest[i] = '\0';
-return (dest);
-} 
+return (0);
+}
