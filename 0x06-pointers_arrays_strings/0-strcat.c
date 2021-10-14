@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strcat - concatenates
  * @dest : dest
@@ -7,7 +6,7 @@
  */
 char *_strcat(char *dest, char *src)
 {
-int n, l, j, i;
+int  l, j, i;
 while(dest[l++]);
 l++;
 for (i = l; src[j] != '\0' ; i++)
