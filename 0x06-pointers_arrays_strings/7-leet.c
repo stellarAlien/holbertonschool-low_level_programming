@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * leet - entry point
  * @s:char
