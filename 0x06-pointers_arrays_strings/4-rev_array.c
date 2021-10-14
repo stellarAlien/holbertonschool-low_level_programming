@@ -1,15 +1,16 @@
 #include"main.h"
 /*
 * reverse_array : reversa an array
-* @a :array
+* @*a :array
 * @n :array size
 */
 void reverse_array(int *a, int n)
 {
 int x,i;
+
 if( (n%2) == 0)
 {
-    n = n/2;
+n = n/2;
 }
 else
 n = ((n-1)/2);
