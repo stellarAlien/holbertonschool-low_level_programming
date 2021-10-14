@@ -13,8 +13,9 @@ l++;
 }
 for (i = 0; src[i] != '\0' ; i++)
 {
-dest[l++]  = src[i];
+dest[l]  = src[i];
+l++;
 }
-dest[i] = '\0';
+dest[l] = '\0';
 return(dest);
 }
