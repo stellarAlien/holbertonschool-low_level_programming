@@ -1,4 +1,4 @@
-#include "main.h"
+
 /**
  * _strncpy- link two strings
  * @dest :string to be concatenated with src
