@@ -8,8 +8,10 @@
 char *_strcat(char *dest, char *src)
 {
 int n, l;
-n = strlen(src);
-l = strlen(dest);
+while (dest[n++])
+n++;
+while(dest[l++]);
+l++;
 for (i = l; dest[i] &&  i < n ; i++)
 {
 dest[i] = src[j++];
