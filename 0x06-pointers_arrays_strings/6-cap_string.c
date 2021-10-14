@@ -1,11 +1,9 @@
 #include "main.h"
-
 /**
  * cap_string - entry point
  * @s:char
  * Return:char
  */
-
 char *cap_string(char *s)
 {
 int i = 0, j = 0;
