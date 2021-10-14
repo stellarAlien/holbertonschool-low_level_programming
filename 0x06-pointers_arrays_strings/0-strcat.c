@@ -11,7 +11,7 @@ while (src[n++])
 n++;
 while(dest[l++]);
 l++;
-for (i = l; dest[i] &&  i < n ; i++)
+for (i = l; (dest[i] &&  (i < n)) ; i++)
 {
 dest[i] = src[j++];
 }
