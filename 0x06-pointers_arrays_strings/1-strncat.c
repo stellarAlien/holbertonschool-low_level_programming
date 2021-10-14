@@ -1,8 +1,5 @@
 #include "main.h"
-/**
-<<<<<<< HEAD
- * _strncat)- link two strings
-=======
+/*
  * _strncat - link two strings
 >>>>>>> f6d0fa530a13373d5b896c82e7cb0d46c56c3385
  * @dest :string to be concatenated with src
@@ -13,18 +10,15 @@
 char *_strncat(char *dest, char *src, int n)
 {
 int l = 0, i;
-
 while (dest[l])
 {
 l++;
 }
-
 for (i = 0; src[i] && i < n; i++)
 {
 dest[l] = src[i];
 l++;
 }
-
 dest[l] = '\0';
 return (dest);
 }
