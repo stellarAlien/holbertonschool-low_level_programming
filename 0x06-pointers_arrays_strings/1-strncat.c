@@ -1,6 +1,10 @@
 #include "main.h"
 /**
+<<<<<<< HEAD
  * _strncat)- link two strings
+=======
+ * _strncat - link two strings
+>>>>>>> f6d0fa530a13373d5b896c82e7cb0d46c56c3385
  * @dest :string to be concatenated with src
  * @src : string to concatenate to dest
  * @n : how many bytes to link from src to dest
