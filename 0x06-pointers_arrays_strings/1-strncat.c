@@ -1,8 +1,10 @@
-#include "main.h"
-#include<string.h>
 /**
-* 
-*/
+ *_strncat - concatenates two strings
+ *@dest: pointer parameter destination
+ *@src: pointer parameter source
+ *@n: integer
+ *Return: destination variable
+ */
 char *_strncat(char *dest, char *src, int n)
 {
 int d;
