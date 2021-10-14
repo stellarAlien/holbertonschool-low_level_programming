@@ -1,23 +1,27 @@
 #include "main.h"
-
 /**
- * _strcmp - entry point
- * @s1:char 1 
- * @s2:char 2
+ * _strncpy - entry point
+ * @dest:char
+ * @src:char
+ * @n:int
  * Return:char
  */
-int _strcmp(char *s1, char *s2)
+char *_strncpy(char *dest, char *src, int n)
 {
-while ((*s1 != '\0') && (*s2 != '\0'))
+char *s = dest;
+int i = 0;
+while ((*src != '\0') && (i < n))
 {
-if (*s1 == *s2)
-{
-s1++;
-s2++;
-continue;
+*dest = *src;
+dest++;
+src++;
+i++;
 }
-else if (*s1 != *s2)
-return (*s1 - *s2);
+while (i < n)
+{
+*dest = '\0';
+dest++;
+i++;
 }
-return (0);
+return (s);
 }
