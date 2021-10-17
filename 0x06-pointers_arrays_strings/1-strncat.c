@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+/**
  * _strncat - link two strings
  * @dest :string to be concatenated with src
  * @src : string to concatenate to dest
@@ -13,7 +13,7 @@ while (dest[l])
 {
 l++;
 }
-for (i = 0; src[i] && i <= n; i++)
+for (i = 0; src[i] && i < n; i++)
 {
 dest[l] = src[i];
 l++;
