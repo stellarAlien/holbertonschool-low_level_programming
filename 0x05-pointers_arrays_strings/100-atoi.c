@@ -15,18 +15,18 @@ switch (s[i])
 	   case ('-'):
 	   a = 0;
 	    i++;
-	     case(+):
+	     case('+'):
 	     a = 1;
 	      i++;
 	       case ('0' ... '9'):
 	       if(a)
 	       {
-		       printf("%d", s[i]-48);
+		       printf("%d", s[i] - 48);
 		       i++;
 	       }
 	       else 
 	       {
-printf("-%d", s[i]-48);
+printf("-%d", s[i] - 48);
 }
 default :
 {
