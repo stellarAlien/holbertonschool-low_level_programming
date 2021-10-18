@@ -1,7 +1,7 @@
 /**
 *memset - fill a memory space with a constant
 *@s : string
-*@b : byte 
+*@b: byte 
 *@n : int
 *Return : s
 */
