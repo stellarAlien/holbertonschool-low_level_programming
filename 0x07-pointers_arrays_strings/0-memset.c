@@ -2,8 +2,8 @@
 /**
 *memset - fill a memory space with a constant
 *@s : string
-*@b: byte 
-*@n : int
+* @b: byte 
+* @n: int
 *Return : s
 */
 char *_memset(char *s, char b, unsigned int n)
