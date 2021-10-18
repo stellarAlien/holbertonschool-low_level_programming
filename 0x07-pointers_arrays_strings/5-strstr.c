@@ -17,6 +17,10 @@ while (haystack[i++])
 if (haystack [i] == needle[j])
 {
 j++;
+else
+{
+j = 0;
+}
 if
 {
 j == l;
