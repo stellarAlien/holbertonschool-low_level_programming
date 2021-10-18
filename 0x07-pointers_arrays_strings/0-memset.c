@@ -1,3 +1,4 @@
+#include "main.h"
 /**
 *memset - fill a memory space with a constant
 *@s : string
