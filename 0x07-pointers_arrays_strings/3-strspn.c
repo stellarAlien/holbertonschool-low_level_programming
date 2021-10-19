@@ -8,6 +8,7 @@ int verif(char *c, char *accept)
 int i, v;
 v = 0;
 char *p;
+p = accept;
 while (*p)
 {
 if (*p == c)
@@ -29,8 +30,9 @@ unsigned int _strspn(char *s, char *accept)
 {
 unsigned int i;
 i = 0;
-while (s[i] && verif(s[i++]))
+while (s[i] && verif(s[i]))
 {
+i++;
 continue;
 }
 return i;
