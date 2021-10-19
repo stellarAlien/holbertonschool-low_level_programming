@@ -1,3 +1,4 @@
+#include"main.h"
 /**
  *_memset - fill a memory space with a constant
  *@s: stringa
