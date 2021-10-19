@@ -1,41 +1,29 @@
 /**
-* verif - verif if char is in accept
-*@c :char
-*Return: 1 or 0
-*/
-int verif(char *c, char *accept)
-{
-int i, v;
-v = 0;
-char *p;
-p = accept;
-while (*p)
-{
-if (*p == c)
-{
-v = 1;
-break;
-}
-p++;
-}
-return (v);
-}
+ * _strspn - gets the length of a prefix substring
+ *
+ * @s: segment to return bytes from
+ * @accept: the bytes to include
+ *
+ * Return: the number of bytes in the initial segment of @s which consist only
+ * of bytes from @accept
+ */
 
-/**
-*_stspn - returns the length of prefix
-*@s: string
-*@accept : accept string
-*/
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int i;
-i = 0;
-while (s[i] && verif(s[i]))
+int i, j;
+int c = 0;
+for (i = 0; s[i] != '\0'; i++)
 {
-i++;
-continue;
+if (s[i] != 32)
+{
+for (j = 0; accept[j] != '\0'; j++)
+{
+if (s[i] == accept[j])
+c++;
 }
-return i;
 }
-
-    
+else
+return (c);
+}
+return (c);
+}
