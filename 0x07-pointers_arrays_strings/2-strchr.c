@@ -1,7 +1,7 @@
 /**
 * _strchr - locate  a character in  a string
-*@s : string
-*@c : char
+*@s : string to  search in
+*@c : char to look for 
 */
 char *_strchr(char *s, char c)
 {
