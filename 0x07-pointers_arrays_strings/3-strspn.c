@@ -3,17 +3,19 @@
 *@c :char
 *Return: 1 or 0
 */
-int verif(char *c)
+int verif(char *c, char *accept)
 {
 int i, v;
 v = 0;
-while ( accept[i++])
+char *p;
+while (*p)
 {
-if (accept[i] == c)
+if (*p == c)
 {
 v = 1;
 break;
 }
+p++;
 }
 return (v);
 }
