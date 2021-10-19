@@ -15,7 +15,7 @@ while ((*src != '\0') && (i < n))
 *dest = *src;
 dest++;
 src++;
-i++;
+i++;    
 }
 while (i < n)
 {
