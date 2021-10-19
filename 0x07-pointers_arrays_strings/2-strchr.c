@@ -10,9 +10,13 @@ char *p
 i = 0;
 while (*s)
 {
-if *s == c;
+if 
+{
+*s == c;
 p = s;
 break;
+}
+s++;
 }
 return (p);
 }
