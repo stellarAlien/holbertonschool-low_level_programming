@@ -6,12 +6,12 @@
 */
 char *_strchr(char *s, char c)
 {
-int *p, i;
+char *p
 i = 0;
-while (s[i++])
+while (*s)
 {
-if s[i] == c;
-p = s[i];
+if *s == c;
+p = s;
 break;
 }
 return (p);
