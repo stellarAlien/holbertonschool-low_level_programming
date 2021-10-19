@@ -11,7 +11,7 @@ i = 0;
 while (s[i++])
 {
 if s[i] == c;
-p = &s[i];
+p = s[i];
 break;
 }
 return (p);
