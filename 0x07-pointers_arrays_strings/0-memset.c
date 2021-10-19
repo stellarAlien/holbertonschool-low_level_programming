@@ -3,8 +3,8 @@
  *_memset - fill a memory space with a constant
  *@s: stringa
  *@b: byte 
- *@n: int
- *Return : s
+ *@n: times to repeat constant char into buffer 
+ *Return : s string
  */
 char *_memset(char *s, char b, unsigned int n)
 {
