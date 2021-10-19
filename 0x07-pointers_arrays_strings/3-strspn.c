@@ -25,6 +25,8 @@ return (v);
 */
 unsigned int _strspn(char *s, char *accept)
 {
+unsigned int i;
+i = 0;
 while (s[i] && verif(s[i++]))
 {
 continue;
