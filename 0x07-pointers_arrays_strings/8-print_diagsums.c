@@ -9,7 +9,7 @@
 void print_diagsums(int *a, int size)
 {
     int i, d1, d2;
-for(i = 0; i < n; i++)
+for(i = 0; i < size; i++)
 {
 d1 += a[i][i];
 d2 += s[i][n - i - 1 ];
