@@ -1,34 +1,29 @@
-#include"main.h"
+#include "main.h"
 /**
- *  is_prime_number  - checks if n is prime
- *  @n :integer to check
- *  Return : 1 if prime else 0
- */
-int is_prime_number(int n)
+ *  * _sqrt_recursion - entry point
+ *   * @n:int
+ *    * Return:int
+ *     */
+int _sqrt_recursion(int n)
 {
-if ((n == 1) || (n < 0))
-{
-return(0);
-}
-else
-return(isprime(2,n));
+	if (n == 0)
+		return (-1);
+	else
+		return (sqrt_verif(1, n));
 }
 /**
- * verif - verif if n is prime
- * @n : number to check
- * Return : 1 if n is prime else 0
- */
-int isprime( int i; int n)
+ *  * sqrt_verif - entry point
+ *   * @n:int
+ *    * @sq:int
+ *     * Return:int
+ *      */
+int sqrt_verif(int sq, int n)
 {
-if ( i > n)
-{
-return(1);
-}
-if ( (n % i) == 0)
-{
-return (0);
-}
-else 
-return(isprime(++i,n));
+	if (sq * sq == n)
+		return (sq);
+	else if (sq > n)
+		return (-1);
+	else
+		return (sqrt_verif(sq + 1, n));
 }
 
