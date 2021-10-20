@@ -2,7 +2,7 @@
 /**
  * _²factorial - calculates factorial of a number
  * @n : integer to calcualte it's factor
- * Return : n!
+ *Return : returns n!
  */
 int factorial(int n)
 {
