@@ -1,18 +1,19 @@
 #include"main.h"
 /**
- * factorial(int n) - calculates factorial of a number
+ * _²factorial - calculates factorial of a number
  * @n : integer to calcualte it's factor
+ * Return : n!
  */
 int factorial(int n)
 {
-if ( n < 0)
+if (n < 0)
 {
 return (-1);
 }
-else if ( n > 0) 
+else if (n > 0)
 {
-return ( n * factorial(n - 1));
+return (n * factorial(n - 1));
 }
-else 
-return(1);
+else
+return (1);
 }
