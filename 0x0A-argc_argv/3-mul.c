@@ -15,9 +15,10 @@ if ( argc < 3 )
 	}
 else
 {
-a = val(argv[1]);
-b = val(argv[2]);
-printf("%d", val(argv[1])*val(argv[2]));
+a = atoi(argv[1]);
+b = atoi(argv[2]);
+printf("%d", a*b);
+
 return (0);
 }
 }
