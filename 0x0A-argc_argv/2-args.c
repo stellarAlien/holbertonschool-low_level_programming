@@ -1,17 +1,20 @@
-#include<stdio.h>
+#include <stdio.h>
+
 /**
- * main - print all argvarguments
- *@argc: argv size
- * @argv: argv
- * Return: always 0
+ *main - prints all arguments it receives.
+ *@argc: size parameters
+ *@argv: array pointer parameters
+ *Return: 0 success
  */
 int main(int argc, char *argv[])
 {
-unsigned int  i;
-for(i = 0; i < argc; i++)
-{
-printf("%s\n", argv[i]);
-}
-return (0);
-}
+	int i = 0;
 
+	if (argc >= 0)
+	{
+		for (i = 0; i < argc; i++)
+			printf("%s\n", argv[i]);
+	}
+
+	return (0);
+}
