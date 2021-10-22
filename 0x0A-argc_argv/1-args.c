@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 /**
  *main - print argc
  *@argc: argcount
