@@ -1,21 +1,27 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- *main - prints all arguments it receives.
+ *main - print the result of the multiplication
  *@argc: size parameters
  *@argv: array pointer parameters
  *Return: 0 success
  */
 int main(int argc, char *argv[])
 {
-	int i = 0;
+	int i, j;
 
-	if (argc >= 0)
+	if (argc > 2)
 	{
-		for (i = 0; i < argc; i++)
-			printf("%s\n", argv[i]);
+		i = atoi(argv[1]);
+		j = atoi(argv[2]);
+		printf("%d\n", i * j);
+	}
+	else
+	{
+		printf("Error\n");
+		return (1);
 	}
 
 	return (0);
 }
-
