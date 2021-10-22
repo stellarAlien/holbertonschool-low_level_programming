@@ -1,13 +1,19 @@
 #include<stdio.h>
 #include<string.h>
 #include<ctype.h>
-int main(void)
+/**
+ *  *main - adds positive numbers.
+ *   *@argc: size parameters
+ *    *@argv: array pointer parameters
+ *     *Return: 0 success or 1 error
+ */
+int main(int argc, char *argv[])
 {
-int i,s, l, j;
+int i, s, l, j;
 s = 0;
 j = 0;
 l = 0;
-	if(*argc < 1)
+	if(argc < 2)
 	{
 		print("0\n");
 	}
@@ -33,5 +39,4 @@ l = 0;
 	}
 	return(0);
 }
-	
 
