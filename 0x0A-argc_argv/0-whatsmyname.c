@@ -1,8 +1,8 @@
 #include<stdio.h>
 /**
  * main - prints program name
- * @argc - arrgcount 
- * @argv - argvect
+ * @argc: arrgcount 
+ * @argv: argvect
  */
 int main(__attribute__((unused)) int argc , char *argv[])
 {
