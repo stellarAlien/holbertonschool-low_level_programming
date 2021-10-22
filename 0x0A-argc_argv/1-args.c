@@ -7,7 +7,7 @@
  */
 int main(int argc,  __attribute__((unused)) char *argv[])
 {
-printf("%c", argc[0]);
+printf("%d", argc);
 return(0);
 }
 
