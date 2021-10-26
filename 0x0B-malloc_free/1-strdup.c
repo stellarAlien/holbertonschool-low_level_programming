@@ -14,7 +14,7 @@ char *s;
 	return (NULL);
 	}
 	while (str[l] != '\0')
-	{	
+	{
 	l += 1;
 	}
 	s = malloc((sizeof(char) * l) + 1);
