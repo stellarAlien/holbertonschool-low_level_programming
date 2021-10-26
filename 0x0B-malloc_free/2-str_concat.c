@@ -16,6 +16,7 @@ return (s2);
 }
 else if (*s2 == '\0')
 {
+rre
 return (s1);
 }
 while (s1[i] != '\0')
@@ -33,9 +34,11 @@ if (s == NULL)
 	fprintf(stderr, "not enough memory");
 	return (NULL);
 }
+t = 0;
 for (k = 0; k <= i; k++)
 {
-s[k] = s1[i];
+s[k] = s1[t];
+t++;
 }
 t = 0;
 for (k = 0; k <= (i + j); k++)
