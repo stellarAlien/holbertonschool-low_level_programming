@@ -1,4 +1,5 @@
 #include<stdlib.h>
+#include<stdio.h>
 /**
  * str_concat - concats two strings
  * @s1:string uno
@@ -7,7 +8,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-unsigned int i, j, k, t, m;
+unsigned int i, j, k, t;
 char *s;
 if (*s1 == '\0')
 {
@@ -36,7 +37,6 @@ for (k = 0; k <= i; k++)
 {
 s[k] = s1[i];
 }
-m = i + j;
 t = 0;
 for (k = 0; k <= (i + j); k++)
 {
