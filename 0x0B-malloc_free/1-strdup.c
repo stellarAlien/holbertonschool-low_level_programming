@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 /**
  * _strdup - returns copied string
  * @str: string to copy from

@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 /**
  * *create_array- creates an arra and returns it's first char with c value
  *@size: size of array
