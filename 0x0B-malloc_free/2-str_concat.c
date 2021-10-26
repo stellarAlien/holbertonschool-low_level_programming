@@ -16,7 +16,6 @@ return (s2);
 }
 else if (*s2 == '\0')
 {
-rre
 return (s1);
 }
 while (s1[i] != '\0')
