@@ -18,6 +18,9 @@ if (s == NULL)
 	{
 	return (NULL);
 	}
-*s = c;
+for (i = 0; i <= size; i++)
+{
+	*(s + i) = c;
+}
 return (s);
 }
