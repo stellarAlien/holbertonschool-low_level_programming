@@ -18,8 +18,11 @@ return (NULL);
 }
 for (i = 0; i <= ac; i += 2)
 {
-s[i] = *(*(av + i));
+while ( av[i][j] != '\0')
+{
+s[i] = av[i][j];
 s[i + 1] = '\n';
+}
 }
 s[i - 1] = '\0';
 return (s);
