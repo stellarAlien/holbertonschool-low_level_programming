@@ -30,10 +30,11 @@ arr[i] = malloc(sizeof(int) * width);
     for (j = 0; j < width; j++)
     {
       free(arr[i][j]);
-    fprintf(stderr, "not enough memory");
+   }
+     fprintf(stderr, "not enough memory");
     free(arr[i]);
     return (NULL);
-  }
+  }  
 for (j = 0; j < width; j++)
 {
 arr[i][j] = 0;
