@@ -27,6 +27,9 @@ arr = malloc(sizeof(int *) * height);
 arr[i] = malloc(sizeof(int) * width);
   if (*(arr + i) == NULL)
   {
+    for (j = 0; j < width; j++)
+    {
+      free(arr[i][j]);
     fprintf(stderr, "not enough memory");
     free(arr[i]);
     return (NULL);
