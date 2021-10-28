@@ -7,12 +7,13 @@
  */
 int *array_range(int min, int max)
 {
-	int i, j, *arr;
+	int i, j, *arr, ran;
 
 	if( min > max)
 	{
 		return(NULL);
 	}
+	ran = (max - min) + 1; 
 	arr = (int *)calloc(max - min,sizeof(int));
 	if (arr == NULL)
 	{
@@ -20,10 +21,9 @@ int *array_range(int min, int max)
 	}
 	*arr = min;
 	min++;
-		for(i = min; i <= max; i++)
+		for(i = 0; i < ran; i++)
 		{
-			*(arr + j * sizeof(int)) = i;
-			j++;
+			arr[i] = min + i;
 		}
 		return(arr);
 }
