@@ -37,6 +37,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 			free(b);
 			return (NULL);
 	}
+	*b = 0
 	}
 	return (p);
 }
