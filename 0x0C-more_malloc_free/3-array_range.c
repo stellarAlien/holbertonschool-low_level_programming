@@ -7,20 +7,18 @@
  */
 int *array_range(int min, int max)
 {
-	int i, j, *arr, ran;
+	int i, *arr, ran;
 
 	if( min > max)
 	{
 		return(NULL);
 	}
 	ran = (max - min) + 1; 
-	arr = calloc(ran,sizeof(int));
+	arr = malloc(sizeof(int) * ran);
 	if (arr == NULL)
 	{
 		return (NULL);
 	}
-	*arr = min;
-	min++;
 		for(i = 0; i < ran; i++)
 		{
 			arr[i] = min + i;
