@@ -14,7 +14,7 @@ int *array_range(int min, int max)
 		return(NULL);
 	}
 	ran = (max - min) + 1; 
-	arr = (int *)calloc(max - min,sizeof(int));
+	arr = calloc(ran,sizeof(int));
 	if (arr == NULL)
 	{
 		return (NULL);
