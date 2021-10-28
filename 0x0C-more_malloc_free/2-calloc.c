@@ -7,14 +7,14 @@
  */
  void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int i;
+	unsigned int i, j;
 	int *p, *b;
 
 	if (nmemb == 0 || size ==0)
 	{
 		return (NULL);
 	}
-	P = (int *)malloc(size);
+	p = (int *)malloc(size);
 	b = p;
 	*b = 0;
 	   if(p == NULL)
