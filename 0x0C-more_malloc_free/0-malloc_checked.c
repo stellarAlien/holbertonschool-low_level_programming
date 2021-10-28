@@ -6,12 +6,13 @@
 void *malloc_checked(unsigned int b)
 {
 	void *p;
+
 	p = malloc(b);
-	if ( p == NULL)
+	if (p == NULL)
 	{
-		return ( NULL);
+		return (NULL);
 		exit(98);
 	}
 	else
-		return(p);
+		return (p);
 }
