@@ -13,7 +13,7 @@ int *array_range(int min, int max)
 	{
 		return(NULL);
 	}
-	arr = calloc(max - min,sizeof(int));
+	arr = (int *)calloc(max - min,sizeof(int));
 	if (arr == NULL)
 	{
 		return (NULL);
