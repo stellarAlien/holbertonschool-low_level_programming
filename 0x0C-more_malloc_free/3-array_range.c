@@ -18,6 +18,8 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
+	*arr = min;
+	min++;
 		for(i = min; i <= max; i++)
 		{
 			*(arr + j * sizeof(int)) = i;
