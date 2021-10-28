@@ -5,20 +5,20 @@
  * @size: size of each block
  * Return: Null in failure or arr
  */
- void *_calloc(unsigned int nmemb, unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int i, j;
 	int *p, *b;
 
-	if (nmemb == 0 || size ==0)
+	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
 	p = (int *)malloc(size);
 	b = p;
 	*b = 0;
-	   if(p == NULL)
-	   {
+	if (p == NULL)
+	{
 		return (NULL);
 		free(p);
 		free(b);
@@ -29,14 +29,14 @@
 		b = (int *)malloc(size);
 		if (b == NULL)
 		{
-			for (j = i; j >=0; j--)
+			for (j = i; j >= 0; j--)
 			{
-				free(p + j * size);			
+				free(p + j * size);
 			}
 			free(p);
 			free(b);
 			return (NULL);
 	}
 	}
-	return(p);
+	return (p);
 }
