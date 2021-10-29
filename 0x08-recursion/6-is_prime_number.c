@@ -15,8 +15,8 @@ int verif(int n)
 		{
 			return(0);
 		}
-		return (1);
 	}
+	return (1);
 }
 /**
  *is_prime_number: checks if number is prime
