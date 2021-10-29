@@ -14,11 +14,11 @@ return;
 else if(*s == '\n')
 {
 _putchar('\n');
+_print_rev_recursion(s++);
 }
 else if ( (*(s + 1) == '\0'))
 {
 _putchar(*s);
-*s = '\0';
 _print_rev_recursion(--s);
 }
 else 
