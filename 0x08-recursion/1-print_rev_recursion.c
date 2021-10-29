@@ -5,23 +5,23 @@
  */
 void _print_rev_recursion(char *s)
 {
-if( *s == '\0')
+if (*s == '\0')
 {
 _putchar('\0');
 return;
 }
 
-else if(*s == '\n')
+else if (*s == '\n')
 {
 _putchar('\n');
 _print_rev_recursion(s++);
 }
-else if ( (*(s + 1) == '\0'))
+else if ((*(s + 1) == '\0'))
 {
 _putchar(*s);
 _print_rev_recursion(--s);
 }
-else 
+else
 s = s + 1;
 }
 
