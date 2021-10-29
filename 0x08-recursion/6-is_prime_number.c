@@ -4,18 +4,19 @@
  * @n: integer to check if prime
  * Return: 1 if 
  */
-int verif(int n)
+int verif(int n, int i, float ran)
 {
-	float i, ran;
-	ran = n/2;
-
-	for (i = 2; i <= ran; i++)
+	if (i == (int)(ran))
 	{
-		if ((n % (int)(i)) == 0)
-		{
+		if ((n % i) == 0)
+		{ 
 			return(0);
 		}
+		else 
+			return (1);
 	}
+	else if ((n % i) 
+
 	return (1);
 }
 /**
