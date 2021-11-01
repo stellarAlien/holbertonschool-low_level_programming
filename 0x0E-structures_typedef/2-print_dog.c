@@ -1,4 +1,5 @@
 #inlcude "dog.h"
+#include<stdio.h>
 /**
  * print_dog - print dog's info
  * @d: struct
