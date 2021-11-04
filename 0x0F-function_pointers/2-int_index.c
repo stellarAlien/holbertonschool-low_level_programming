@@ -1,4 +1,3 @@
-#include<stdio.h>
 /**
  *int_index - returns index of element
  *@array: array to check
