@@ -1,3 +1,5 @@
+#include "function_pointers.h"
+#include <stddef.h>
 /**
  *int_index - returns index of element
  *@array: array to check
@@ -10,7 +12,9 @@ int int_index(int *array, int size, int (*cmp)(int))
 	int i;
 
 	if  (size <= 0)
+	{
 		return (-1);
+	}
 	else if (array && cmp)
 	{
 	for (i = 0; i < size; i++)
