@@ -16,7 +16,8 @@ return (0);
 va_start(l, x);
 for (i = 0; i < n; i++)
 {
-sum += va_arg(l, x);
+va_arg(l, x);
+sum += x;
 }
 va_end(l);
 return (sum);
