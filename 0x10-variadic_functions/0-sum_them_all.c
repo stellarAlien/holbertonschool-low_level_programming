@@ -1,5 +1,6 @@
 #include<stdarg.h>
 #include<stdio.h>
+#include "varidiac_functions.h"
 /**
  * sum_them_all - summ all vars
  * @n: size of args
