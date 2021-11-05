@@ -3,9 +3,11 @@
 #include<stdlib.h>
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-unsigned int i;
+size_t i;
+va_list(l);
 
-	va_list(l);
+	if (n == 0)
+		return;
 	va_start(l, n);
 	for (i = 0; i < n; i++)
 	{
@@ -18,9 +20,13 @@ unsigned int i;
 				if (i == n - 1)
 				printf("%d", va_arg(l, int));
 				else
+				{
 					printf("%d%s", va_arg(l, int), separator);
+				}
 
 			}
 	}
 	printf("\n");
+	va_end(l);
 }
+
