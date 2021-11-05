@@ -14,12 +14,12 @@ va_list l;
 
 s = 0;
 if (n == 0)
-return (0);
-		va_start(l, n);
-		for (i = 0; i < n; i++)
-		{
-		s += va_arg(l, int);
-		}
-		va_end(l);
-		return (s);
+	return (0);
+va_start(l, n);
+for (i = 0; i < n; i++)
+{
+	s += va_arg(l, int);
+}
+va_end(l);
+return (s);
 }
