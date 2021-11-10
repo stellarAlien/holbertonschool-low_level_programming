@@ -1,10 +1,19 @@
-          global    main
-          extern    puts
+; File: 100-hello_holberton.asm
+; Desc: 64-bit assembly program that prints
+;       Hello, World followed by a new line.
+section .text
+   global main
 
-          section   .text
-main:                                       ; This is called by the C library startup code
-          mov       rdi, message            ; First integer (or pointer) argument in rdi
-          syscall
-          ret                               ; Return from main back into C library wrapper
-message:
-          db        "Hello, World", 0        ; Note strings must be terminated with 0 in C
+main:
+   mov edx,len
+   mov ecx,msg
+   mov ebx,1
+   mov eax,4
+   int 0x80
+
+   mov eax,0
+   int 0x80
+
+section .data
+   msg: db 'Hello, World', 0xa
+   len: equ $ - msg
