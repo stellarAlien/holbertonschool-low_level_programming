@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-void construct(void) _attribute_ ((constructor));
+void construct(void) __attribute__((constructor));
 
 /**
- *  * Construct- Prints a string before the
- *        main function is executed.
+ *Construct- Prints a string before the
+ *main function is executed.
  */
 
 void construct(void)
