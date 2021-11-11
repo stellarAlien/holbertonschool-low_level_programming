@@ -17,5 +17,5 @@ size_t i;
 		h = h->next;
 	}
 	/*free((void)(p));*/
-	return (i);
+	return (i + 1);
 }
