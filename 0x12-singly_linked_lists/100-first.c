@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-void construct(void) attribute ((constructor));
+void construct(void) _attribute_ ((constructor));
 
 /**
- *  * Func - Prints a string before the
+ *  * Construct- Prints a string before the
  *        main function is executed.
  */
 
