@@ -1,18 +1,20 @@
 #include "lists.h"
+#include<stdlib.h>
+#include<stdio.h>
 /**
  *list_len - returns chained list length
  *@h: head of list
  *Return: list len
  */
+
 size_t list_len(const list_t *h)
 {
 size_t i;
-const list_t *p = h;
 
-	while(p->next != NULL)
+	while(h)
 	{
 		i++;
-		p = p->next;
+		h = h->next;
 	}
 	/*free((void)(p));*/
 	return (i);
