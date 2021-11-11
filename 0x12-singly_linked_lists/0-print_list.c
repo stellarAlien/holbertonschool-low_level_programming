@@ -13,8 +13,8 @@ count = 0;
 while (h)
 {
 	count++;
-	(h->str ? printf("[%d] %s\n", h->len, h->str) :
-	printf("[0] (nil)\n");)
+	h->str ? printf("[%d] %s\n", h->len, h->str) :
+	printf("[0] (nil)\n");
 	h = h->next;
 }
 return (count);
