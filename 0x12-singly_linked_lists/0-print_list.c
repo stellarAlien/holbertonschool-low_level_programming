@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 #include<stdio.h>
 /**
  *print_list - prints a linked list
@@ -23,9 +23,9 @@ const list_t *p = h;
 	else
 	{
 	printf("%s", p->str);
-	i++;
 	}
 	p = p->next;
+	i++;
 	}
 	return (i);
 }
