@@ -17,6 +17,7 @@ while (h)
 	printf("[0] (nil)\n");
 	h = h->next;
 }
+free(h);
 return (count);
 }
 
