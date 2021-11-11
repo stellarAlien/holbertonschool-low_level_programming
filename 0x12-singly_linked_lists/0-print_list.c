@@ -1,5 +1,6 @@
 #include "lists.h"
 #include<stdio.h>
+#include<stdlib.h>
 /**
  *print_list - prints a linked list
  *@h: linked list
@@ -7,12 +8,12 @@
  */
 size_t print_list(const list_t *h)
 {
-int i;
-const list_t *p = h;
-/*char *s;*/
-	
+size_t i, j;
+const list_t *p = h; /*(list_t *)malloc(sizeof(list_t));*/
+char *s;
+
 	i = 0;
-	/*p = h;*/
+	p = h;
 	/*s = h->str;*/
 	while(p->next != NULL)
 	{
@@ -22,7 +23,13 @@ const list_t *p = h;
 	}
 	else
 	{
-	printf("%s", p->str);
+	j = 0;
+	s = p->str;
+	while(s[j] != '\0')
+	{
+	printf("%s", s);
+	j++;
+	}
 	}
 	p = p->next;
 	i++;
