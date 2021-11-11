@@ -1,31 +1,29 @@
 #include "main.h"
+int checkprime(int i, int n);
 /**
- * verif - verifies if number is prime
- * @n: integer to check if prime
- * Return: 1 if 
+ * checkprime - returns 1 if n is prime, 0 otherwise
+ * @n: the number we are checking primality for
+ * @i: the possible factor of n
+ *
+ *Return: return 1 if prime or 0 if not
  */
-int verif(int n, int i, float ran)
+int checkprime(int i, int n)
 {
-	if (i == (int)(ran))
-	{
-		if ((n % i) == 0)
-		{ 
-			return(0);
-		}
-		else 
-			return (1);
-	}
-	else if ((n % i) 
-
-	return (1);
+	if (n < 2)
+		return (0);
+	if (n % i == 0)
+		return (0);
+	if (i > n / 2)
+		return (1);
+	return (checkprime(i + 1, n));
 }
 /**
- *is_prime_number: checks if number is prime
- *@n: number to check
+ * is_prime_number - returns 1 if prime, 0 otherwise
+ * @n: the number we are checking primality for
+ *
+ * Return: return 1, otherwise 0
  */
 int is_prime_number(int n)
 {
-	int i;
-	i = verif(n);
-	return(i);
+	return (checkprime(2, n));
 }
