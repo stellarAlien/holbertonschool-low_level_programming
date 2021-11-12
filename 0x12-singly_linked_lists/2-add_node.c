@@ -32,7 +32,7 @@ if (str == NULL)
 	return (NULL);
 if (*head == NULL)
 	return (NULL);
-p = malloc(sizeof(list_t));
+p = (list_t *)malloc(sizeof(list_t));
 if (p == NULL)
 return (NULL);
 		p->str = strdup(str);
