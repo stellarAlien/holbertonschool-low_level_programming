@@ -2,11 +2,13 @@
 #include <stdio.h>
 #include <string.h>
 #include "lists.h"
+
 /**
  * print_list - print the elements of the list and returns list count
  * @h: head of the list
  * Return: number of items
 */
+
 size_t print_list(const list_t *h)
 {
 size_t i = 0;
