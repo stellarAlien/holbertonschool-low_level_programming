@@ -41,8 +41,8 @@ return (NULL);
 		free(p);
 		return (NULL);
 		}
-		p->next = *head;
+		p->next = (*head);
 		p->len = str_cnt(str);
-		*head = p;
+		(*head) = p;
 		return (p);
 }
