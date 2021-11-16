@@ -13,9 +13,12 @@ listint_t *Nd, *tmp;
 Nd = malloc(sizeof(listint_t));
 if (Nd == NULL)
 return (NULL);
+else
+{
 Nd->n = n;
 Nd->next = NULL;
-if (head == NULL)
+}
+if (*head == NULL)
 {
 *head = Nd;
 return (Nd);
