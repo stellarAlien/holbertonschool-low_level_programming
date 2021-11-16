@@ -34,7 +34,3 @@ return (NULL);
 p->next->n = n;
 return (p->next);
 }
-
-
-
-
