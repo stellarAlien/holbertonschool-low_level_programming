@@ -21,7 +21,7 @@ if (nw == NULL)
 	return (NULL);
 	printf("ERROR");
 }
-while (i < idx && p)
+while (i < idx && p != NULL)
 {
 p = p->next;
 i++;
