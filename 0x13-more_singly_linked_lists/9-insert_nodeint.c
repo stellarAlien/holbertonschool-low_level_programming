@@ -25,8 +25,15 @@ if (nw == NULL)
 	free(nw);
 }
 p = *head;
-while (i < idx  && p != NULL)
+while (p != NULL)
 {
+if (i == idx)
+{
+	nw->next = p->next;
+	nw->n = n;
+	p->next = nw;
+	return (nw);
+}
 p = p->next;
 i++;
 }
@@ -35,11 +42,5 @@ if (p == NULL || idx > i)
 return (NULL);
 free(nw);
 }
-else
-{
-nw->next = p->next;
-nw->n = n;
-p->next = nw;
-return (nw);
-}
+return (NULL);
 }
