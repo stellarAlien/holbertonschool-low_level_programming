@@ -31,7 +31,7 @@ printf("new adrees did not get allocated");
 free (nw);
 return (NULL);
 }
-p.next = nw;
+p->next = nw;
 nw->n = n;
 return (nw);
 }
