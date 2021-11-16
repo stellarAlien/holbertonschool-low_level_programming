@@ -6,19 +6,12 @@
  */
 size_t listint_len(const listint_t *h)
 {
-size_t i;
-const listint_t *p;
+size_t nodes = 0;
 
-if (h == NULL)
+    while (h)
 {
-	printf("node doesn't exist");
+    nodes++;
+    h = h->next;
 }
-p = h;
-while (p != NULL)
-{
-	i++;
+    return (nodes);
 }
-return (i);
-}
-
-
