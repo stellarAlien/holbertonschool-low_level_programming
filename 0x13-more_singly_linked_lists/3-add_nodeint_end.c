@@ -14,6 +14,12 @@ if (*head == NULL)
 {
 return (NULL);
 }
+p =  (listint_t *)malloc(sizeof(listint_t));
+if (p == NULL)
+{
+	printf("Error");
+	return (NULL);
+}
 p = *head;
 do {
 p = p->next;
@@ -22,9 +28,10 @@ nw = (listint_t *)malloc(sizeof(listint_t));
 if (nw == NULL)
 {
 printf("new adrees did not get allocated");
+free (nw);
 return (NULL);
-free(nw);
 }
+p.next = nw;
 nw->n = n;
 return (nw);
 }
