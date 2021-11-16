@@ -31,10 +31,8 @@ if (p == NULL)
 return (NULL);
 free(nw);
 }
-else
-{
 nw->next = p->next;
 nw->n = n;
 p->next = nw;
-}
+return (nw);
 }
