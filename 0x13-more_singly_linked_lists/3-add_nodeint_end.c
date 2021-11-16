@@ -28,7 +28,7 @@ p->next = (listint_t *)malloc(sizeof(listint_t));
 if (p->next == NULL)
 {
 printf("new adrees did not get allocated");
-free (p->next);
+free(p->next);
 return (NULL);
 }
 p->next->n = n;
