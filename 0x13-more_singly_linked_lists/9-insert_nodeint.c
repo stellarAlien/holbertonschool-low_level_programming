@@ -10,6 +10,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 listint_t *p, *nw;
 unsigned int i;
+
 i = 0;
 if (*head == NULL)
 {
@@ -21,18 +22,22 @@ if (nw == NULL)
 	return (NULL);
 	printf("ERROR");
 }
-while (i < idx && p != NULL)
+p = *head;
+while (i < idx  && p != NULL)
 {
 p = p->next;
 i++;
 }
-if (p == NULL)
+if (p == NULL || idx > i)
 {
 return (NULL);
 free(nw);
 }
+else
+{
 nw->next = p->next;
 nw->n = n;
 p->next = nw;
 return (nw);
+}
 }
