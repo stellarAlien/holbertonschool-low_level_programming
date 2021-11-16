@@ -14,11 +14,14 @@ p = head;
 i = 0;
 while (p)
 {
-if (i == index)
+	if (i == index)
 	return (p);
-i++;
-p = p->next;
+	i++;
+	p = p->next;
 }
 if (index > i)
+{
+return (NULL);
+}
 return (NULL);
 }
