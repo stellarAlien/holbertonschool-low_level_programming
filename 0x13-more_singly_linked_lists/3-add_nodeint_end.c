@@ -15,12 +15,10 @@ if (*head == NULL)
 return (NULL);
 }
 p = *head;
-do
-{
+do {
 p = p->next;
-}
-while(p->next != NULL);
-p->next =(listint_t *)malloc(sizeof(listint_t));
+} while (p->next != NULL);
+p->next = (listint_t *)malloc(sizeof(listint_t));
 if (p->next == NULL)
 return (NULL);
 p->next->n = n;
