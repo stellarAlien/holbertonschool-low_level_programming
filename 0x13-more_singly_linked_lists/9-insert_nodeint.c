@@ -37,10 +37,6 @@ if (i == idx)
 p = p->next;
 i++;
 }
-if (p == NULL || idx > i)
-{
-return (NULL);
 free(nw);
-}
 return (NULL);
 }
