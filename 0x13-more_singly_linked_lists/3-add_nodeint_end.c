@@ -8,29 +8,22 @@
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-listint_t *p;
+    listint_t *Nd;
+    listint_t tmp;
 
-if (*head == NULL)
-{
+    Nd = malloc(sizeof(listint_t));
+    if (Nd == NULL)
 return (NULL);
-}
-p =  (listint_t *)malloc(sizeof(listint_t));
-if (p == NULL)
+        Nd->n = n;
+        Nd->next = NULL;
+    if (head == NULL)
 {
-	printf("Error");
-	return (NULL);
+        *head = Nd;
+return (Nd);
 }
-p = *head;
-do {
-p = p->next;
-} while (p->next != NULL);
-p->next = (listint_t *)malloc(sizeof(listint_t));
-if (p->next == NULL)
-{
-printf("new adrees did not get allocated");
-free(p->next);
-return (NULL);
-}
-p->next->n = n;
-return (p->next);
+tmp = *head;
+    while (tmp->next)
+        tmp = tmp->next;
+        tmp->next = Nd;
+return (Nd);
 }
