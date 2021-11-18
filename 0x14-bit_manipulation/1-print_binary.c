@@ -12,7 +12,7 @@ void print_binary(unsigned long int n)
 		for (i = 1 << 31; i > 0; i >>= 1)
 		if (!!(n & i) == 1 || v == 1)
 		{
-		printf("%d", !!(n & i));
+		printf("%u", !!(n & i));
 		v = 1;
 		}
 
