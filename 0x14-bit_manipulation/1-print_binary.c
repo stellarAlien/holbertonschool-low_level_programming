@@ -5,11 +5,15 @@
  */
 void print_binary(unsigned long int n)
 {
-	if (n == 0)
-		printf("0");
-	while (n > 0)
-	{
-		printf("%lu", n % 2);
-		n /= 2;
-	}
+	    unsigned i, v;
+		
+		v = 0;
+		for (i = 1 << 31; i > 0; i >>= 1)
+		if (!!(n & i) == 1 || v == 1)		
+		{
+		printf("%d", !!(n & i));
+		v = 1;
+		}
+
 }
+
