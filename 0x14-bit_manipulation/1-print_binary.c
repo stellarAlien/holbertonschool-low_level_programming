@@ -5,12 +5,12 @@
  */
 void print_binary(unsigned long int n)
 {
-	    unsigned i, v;
+	    unsigned int i, v;
 		if (n == 0)
-		printf("0");	
+		printf("0");
 		v = 0;
 		for (i = 1 << 31; i > 0; i >>= 1)
-		if (!!(n & i) == 1 || v == 1)		
+		if (!!(n & i) == 1 || v == 1)
 		{
 		printf("%d", !!(n & i));
 		v = 1;
