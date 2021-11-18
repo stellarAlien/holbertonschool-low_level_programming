@@ -5,16 +5,8 @@
  */
 void print_binary(unsigned long int n)
 {
-	    unsigned int i, v;
-		if (n == 0)
-		printf("0");
-		v = 0;
-		for (i = 1 << 31; i > 0; i >>= 1)
-		if (!!(n & i) == 1 || v == 1)
-		{
-		printf("%u", !!(n & i));
-		v = 1;
-		}
-
+		if (n > 1)
+		print_binary(n >> 1);
+		_putchar((n & 1) + '0');
 }
 
