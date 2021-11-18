@@ -16,10 +16,10 @@ while (n > 0 || m > 0)
 
 	if (t1 != t2)
 	{
-	flips++;
+	i++;
 	}
 n >>= 1;
 m >>= 1;
 }
-return (flips);
+return (i);
 }
