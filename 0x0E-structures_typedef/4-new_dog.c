@@ -1,70 +1,66 @@
-#include "dog.h"
 #include <stdlib.h>
-char *cpy(char *dest, char *source);
-int length(char *name);
+#include "dog.h"
+
 /**
- *  * new_dog - Short description
- *   * @name:char
- *    * @age:float
- *     * @owner:char
- *      * Return:void
+ * _strdup - Returns a pointer to a newly allocated space in memory
+ * @str: Holds the string to be copied
+ * Return: a pointer to a char
+ */
+char *_strdup(char *str)
+{
+	char *strc;
+	int i;
+
+	if (str == 0)
+	{
+		return (0);
+	}
+	for (i = 0; str[i] != 0; i++)
+	{
+	}
+	strc = malloc((sizeof(char) * 1) + i);
+	if (strc == 0)
+	{
+		return (0);
+	}
+	for (i = 0; str[i] != 0; i++)
+	{
+		strc[i] = str[i];
+	}
+	strc[i] = 0;
+	return (strc);
+}
+
+/**
+ *new_dog - creates a new dog.
+ *@name: name structure
+ *@age: age: structure
+ *@owner: owner structure
+ *Return: structure or NULL
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *nd;
-	nd = malloc(sizeof(dog_t));
-	if (nd == NULL)
-		return (NULL);
-	if (name == NULL)
-		nd->name = NULL;
-	else
+	dog_t *dog = malloc(sizeof(dog_t));
+
+	if (dog == 0)
+		return (0);
+
+	dog->name = _strdup(name);
+	if (dog->name == 0)
 	{
-		nd->name = malloc(sizeof(length(name) + 1));
-		if (nd->name == NULL)
-		{
-			free(nd);
-			return (NULL);
-		}
-		nd->name = cpy(nd->name, name);
+		free(dog);
+		return (0);
 	}
-	if (owner == NULL)
-		nd->owner = NULL;
-	else
+
+	dog->owner = _strdup(owner);
+	if (dog->owner == 0)
 	{
-		nd->owner = malloc(sizeof(length(owner) + 1));
-		if (nd->owner == NULL)
-		{
-			free(nd);
-			return (NULL);
-		}
-		nd->owner = cpy(nd->owner, owner);
+		free(dog->name);
+		free(dog);
+		return (0);
 	}
-	nd->age = age;
-	return (nd);
-}
-/**
- *  * length - Short description
- *   * @name:char
- *    * Return:int
- */
-int length(char *name)
-{
-	int i = 0;
-	for (; name[i] != '\0'; i++)
-		;
-	return (i);
-}
-/**
- *  * cpy - Short description
- *   * @dest:char
- *    * @source:char
- *     * Return:char
- */
-char *cpy(char *dest, char *source)
-{
-	int i = 0;
-	while (dest[i++])
-		dest[i] = source[j];
-	dest[i] = '\0';
-	return (dest);
+
+	dog->age = age;
+
+	return (dog);
 }
