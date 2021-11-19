@@ -15,8 +15,8 @@ if (nw == NULL)
 {
 	free(nw);
 	return (NULL);
-}	
-if (name == NULL || owner == NULL)
+}
+if (name == NULL || owner == NULL || age < 0 || age > 14)
 {
 	free(nw);
 	return (NULL);
