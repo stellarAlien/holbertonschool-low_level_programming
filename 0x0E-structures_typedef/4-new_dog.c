@@ -1,4 +1,4 @@
-#include "dog.h"
+#include"dog.h"
 /**
  * new_dog - fills struct of new dog
  * @name: name of dog
@@ -18,11 +18,15 @@ if (nw == NULL)
 }	
 if (name == NULL || owner == NULL)
 {
-	printf("insert valid info");
+	free(nw);
 	return (NULL);
 }
+else
+{
 nw->name = name;
 nw->age = age;
 nw->owner = owner;
 return (nw);
+}
+return (NULL);
 }
