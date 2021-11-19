@@ -1,5 +1,8 @@
 #ifndef DOG_HEADER
 #define DOG_HEADER
+#include<stdio.h>
+#include<stddef.h>
+#include<stdlib.h>
 /**
  * struct dog - Short description
  * @name: First member
