@@ -16,7 +16,8 @@ if (fd == -1)
 /*lseek(fd, 0, SEEK_END);*/
 if (text_content != NULL)
 {
-for (len = 0; text_content[len] != '\0'; len++);
+for (len = 0; text_content[len] != '\0'; len++)
+;
 w = write(fd, text_content, len)
 ;
 if (w == -1)
