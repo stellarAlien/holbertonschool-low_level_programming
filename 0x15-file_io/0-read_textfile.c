@@ -20,7 +20,7 @@ rd = read(fd, s, letters);
 if (rd == -1)
 	return (0);
 wr = write(STDOUT_FILENO, s, rd);
-if (wr == -1 || wr < (int)letters)
+if (wr == -1)
 	return (0);
 close(fd);
 free(s);
