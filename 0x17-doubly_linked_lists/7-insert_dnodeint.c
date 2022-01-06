@@ -4,15 +4,19 @@
  * @h: head of list
  * Return: int
  */
-unsigned int node_len(dlistint_t **h)
+unsigned int node_len(dlistint_t **node)
 {
-	unsigned int i;
-	while((*h)->next)
+	unsigned int len = 0;
+	dlistint_t *start;
+
+	start = *node;
+	while (start != NULL)
 	{
-		i++;
+		len += 1;
+		start = start->next;
 	}
-	return (i);
-}	
+	return (len);
+}
 /**
  * insert_dnodeint_at_index - inserts a node at a certain index
  * @h: head of list
