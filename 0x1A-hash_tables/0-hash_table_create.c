@@ -12,20 +12,20 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	if (size == 0)
 		return (NULL);
-	ht = malloc(sizeof(hash_table_t));
+	ht = (hash_table_t *)malloc(sizeof(hash_table_t));
 	if (!ht)
 		return (NULL);
-	array = malloc(sizeof(*array) * size);
+	array = malloc(sizeof(hash_node_t) * size);
 	if (!array)
-{
+	{
 		free(ht);
 		return (NULL);
-}
+	}
 	while (i < size)
-{
+	{
 		array[i] = NULL;
 		i++;
-}
+	}
 	ht->size = size;
 	ht->array = array;
 	return (ht);
