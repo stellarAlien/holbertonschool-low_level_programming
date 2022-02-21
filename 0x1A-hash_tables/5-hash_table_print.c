@@ -8,15 +8,15 @@ void hash_table_print(const hash_table_t *ht)
 	unsigned int i;
 	hash_node_t *node;
 
-	if(!ht || ht->size == 0)
+	if (!ht || ht->size == 0)
 	{
 		return;
 	}
 	printf("{");
-	for(i = 0; ht->array[i]; i++)
+	for (i = 0; i < ht->size; i++)
 	{
 		node = ht->array[i];
-		while(node)
+		while (node)
 		{
 			printf("\'%s\' : \'%s\'", node->key, node->value);
 			node = node->next;
