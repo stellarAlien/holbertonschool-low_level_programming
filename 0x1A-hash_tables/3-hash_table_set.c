@@ -28,8 +28,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int idx;
 
 	new_node = malloc(sizeof(hash_node_t));
+	if (!new_node)
+		return (0);
 	if (new_node == NULL)
-		return (NULL);
+		return (0);
 	if (ht == NULL || key == NULL || *key == '\0')
 		return (0);
 	if (new_node == NULL)
@@ -52,7 +54,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			ht->array[idx] = new_node;
 		}
 		else
+		{
 			update_val(temp, new_node);
+		}
+	}
 	else
 	{
 		new_node->next = NULL;
