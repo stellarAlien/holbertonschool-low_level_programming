@@ -1,0 +1,20 @@
+#include"hash_tables.h"
+#include<stddef.h>
+#include<stdlib.h>
+#include<string.h>
+/**
+ * add_node - 
+/**
+ *hash_table_set - adds element to hash table
+ *@ht: hash table 
+ *@key: key of the element
+ *@value: value to be duplicated
+ *Return: 1 if success else 0
+ */
+
+
+
+
+
+	
+	
