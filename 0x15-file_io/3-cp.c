@@ -31,7 +31,8 @@ int __exit(int error, char *s, int fd)
 /**
  * main - copies one file to another
  * @argc: gotta be 3
- * @argv: 0 on success else exit with errno
+ * @argv: fds
+ * Return: 0 on success else exit with errno
  */
 int main(int argc, char *argv[])
 {
